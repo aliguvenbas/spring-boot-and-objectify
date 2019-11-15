@@ -1,0 +1,26 @@
+- Aim of the project 
+	user objectify as a persistance API at the spring boot project. First we use a with a Data Store Emulator 
+	than deploy it to a Cloud Run service as a real cloud project.  
+
+- What is Objectify?
+
+- What is Data store emulator?
+
+- What I use in the project? 
+	- Lombok
+	- JUnit5
+	- Objectify
+		 compile('com.googlecode.objectify:objectify:6.0.4')
+
+- Writing persistance layer
+	- what is ObjectifyRegistery? why we need to a registration
+	- Using ofy() as persister
+	- define datastore emulator as datastore
+		- install datastore emulator
+			> gcloud components install cloud-datastore-emulator
+		- start data store emulator
+			> gcloud beta emulators datastore start --host-port=localhost:8484
+
+
+
+

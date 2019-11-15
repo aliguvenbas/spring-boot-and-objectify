@@ -1,6 +1,6 @@
 package com.ag.springbootandobjectify.controller;
 
-import com.ag.springbootandobjectify.dto.AirplaneDTO;
+import com.ag.springbootandobjectify.model.Airplane;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,17 +12,17 @@ import java.util.List;
 public class Controller {
 
 	@PostMapping("/add")
-	public void addAirplane(@RequestBody AirplaneDTO airplaneDTO) {
+	public void addAirplane(@RequestBody Airplane airplaneDTO) {
 
 	}
 
 	@GetMapping("/getFleet")
-	public List<AirplaneDTO> getFleet() {
+	public List<Airplane> getFleet() {
 		return null;
 	}
 
 	@GetMapping("getByRegistrationId")
-	public AirplaneDTO getByRegistrationId() {
+	public Airplane getByRegistrationId() {
 		return null;
 	}
 }
