@@ -10,5 +10,6 @@ public class AirplaneRepository {
 
 	public void addAirplane(Airplane airplane) {
 		ofy().save().entity(airplane).now();
+
 	}
 }
