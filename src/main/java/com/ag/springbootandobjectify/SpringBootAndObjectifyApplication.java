@@ -1,5 +1,6 @@
 package com.ag.springbootandobjectify;
 
+import com.ag.springbootandobjectify.repository.ObjectifyRegistry;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

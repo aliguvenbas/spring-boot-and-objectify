@@ -14,12 +14,17 @@
 
 - Writing persistance layer
 	- what is ObjectifyRegistery? why we need to a registration
+		- If we are using emulator, we have to call ObjectifyService.init() before registery or using any of objectify(including ofy()).
+		 	Otherwise we get exception: Caused by: java.lang.IllegalStateException: You must call ObjectifyService.init() before using Objectify
 	- Using ofy() as persister
 	- define datastore emulator as datastore
 		- install datastore emulator
 			> gcloud components install cloud-datastore-emulator
 		- start data store emulator
 			> gcloud beta emulators datastore start --host-port=localhost:8484
+	- ObjectifyFilter
+		- .Unless you will get java.lang.IllegalStateException: You have not started an Objectify context.
+			You are probably missing the ObjectifyFilter. If you are not running in the context of an http request, see the ObjectifyService.run() method.
 
 
 
