@@ -21,10 +21,12 @@ public class AirplaneService {
 	}
 
 	public List<Airplane> getFleet() {
-		return airplaneRepository.getFleet();
+		List<Airplane> airplaneList = airplaneRepository.getFleet();
+		airplaneList.stream().forEach(airplane -> System.out.println("airplane id:" + airplane.getId() + " name:" + airplane.getName()));
+		return airplaneList;
 	}
 
-	public Airplane getByRegistrationId() {
-		return airplaneRepository.getByRegistrationId();
+	public Airplane getByRegistrationId(String id) {
+		return airplaneRepository.getByRegistrationId(id);
 	}
 }

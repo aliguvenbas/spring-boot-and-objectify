@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "4aa776fc-726a-460a-aa19-f57669ccfa08",
+		"name": "spring-boot-and-objectify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "spring-boot-and-objectify",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n        \"type\": \"Airbus A320\",\n        \"name\": \"Maslak\",\n        \"age\": 7,\n        \"registration\": \"TC-DDS\"\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "spring-boot using objectify"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getFleet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getFleet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getFleet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getAirplane?id=1f1bdb3e-0544-48e5-8a54-fa727c957e8d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getAirplane?id=1f1bdb3e-0544-48e5-8a54-fa727c957e8d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAirplane"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1f1bdb3e-0544-48e5-8a54-fa727c957e8d"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -13,11 +13,11 @@ public class AirplaneRepository {
 	}
 
 	public List<Airplane> getFleet() {
-		ObjectifyRegistry.ofy().load().type(Airplane.class).list().stream().forEach(airplane -> System.out.println("airplane id:" + airplane.getId() + " name:" + airplane.getName()));
-		return null;
+		return ObjectifyRegistry.ofy().load().type(Airplane.class).list();
+
 	}
 
-	public Airplane getByRegistrationId() {
-		return null;
+	public Airplane getByRegistrationId(String id) {
+		return ObjectifyRegistry.ofy().load().type(Airplane.class).id(id).now();
 	}
 }

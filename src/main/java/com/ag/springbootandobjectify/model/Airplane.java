@@ -4,12 +4,15 @@ import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Getter
+@Data
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class Airplane {
 	@Id String id;
 	String type;

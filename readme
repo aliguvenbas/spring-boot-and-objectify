@@ -33,6 +33,8 @@
 		- Objectify requires a filter for transactions and pending requests.
 		- we use webfilter with @WebFilter annotation, and execute it in runtime.
 		- https://docs.oracle.com/javaee/6/tutorial/doc/bnagb.html
+		- https://www.journaldev.com/1933/java-servlet-filter-example-tutorial
+		- https://webgunlugum.com/filter/
 
 
 
