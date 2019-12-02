@@ -32,11 +32,18 @@ public class Controller {
 
 	@GetMapping("/getFleet")
 	public List<Airplane> getFleet() {
-		return service.getFleet();
+		System.out.println("getFleet called");
+		List<Airplane> list =service.getFleet();
+		return list;
 	}
 
 	@GetMapping("/getAirplane")
 	public Airplane getByRegistrationId(@RequestParam String id) {
 		return service.getByRegistrationId(id);
+	}
+
+	@GetMapping("/crosscheck")
+	public String crosscheck(@RequestParam String id) {
+		return "crosscheck done!";
 	}
 }
