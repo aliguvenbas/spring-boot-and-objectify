@@ -30,10 +30,15 @@ public class Controller {
 		service.addAirplane(airplane);
 	}
 
+	@PostMapping("/test")
+	public void addAirplane() {
+		System.out.println("test post");
+	}
+
 	@GetMapping("/getFleet")
 	public List<Airplane> getFleet() {
 		System.out.println("getFleet called");
-		List<Airplane> list =service.getFleet();
+		List<Airplane> list = service.getFleet();
 		return list;
 	}
 
